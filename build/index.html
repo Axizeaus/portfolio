@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 
 <head>
   <meta charset="UTF-8">
@@ -10,8 +10,8 @@
 </head>
 
 <body
-  class="antialiased min-h-screen bg-zinc-100 dark:bg-zinc-800 dark:text-white dark:text-opacity-80 place-content-center">
-  <header class="sticky top-0 z-10 ">
+  class="antialiased min-h-screen bg-zinc-200 dark:bg-zinc-800 dark:text-white dark:text-opacity-80 place-content-center">
+  <header class="top-0 z-10 border-b-2">
     <section class="mx-auto flex max-w-4xl items-center justify-between p-4">
       <h1 class="text-3xl font-bold">Hello</h1>
       <button id="hamburger-button" class="relative h-8 w-8 cursor-pointer text-3xl md:hidden">
@@ -43,8 +43,175 @@
 
       </nav>
     </section>
-
   </header>
+  <main class="mx-auto max-w-4xl container">
+    <section id="about-me"
+      class="min-h-screen grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2  py-12 px-6 md:px-12 lg:px-24">
+      <img src="https://placehold.co/500x500" alt="Ye Man Oo's photo" class="rounded-full shadow-2xl mx-auto md:mx-0">
+      <article class="flex flex-col justify-center p-4  text-black dark:text-white">
+        <h1 class="text-3xl font-bold mb-4 text-nowrap">Hi there, I'm Ye Man Oo!</h1>
+        <p class="text-lg mb-4">I'm a passionate web developer with a flair for creating immersive digital experiences
+          that
+          leave a lasting impact.</p>
+      </article>
+    </section>
+
+    <section id="skills" class=" py-12 px-6 md:px-12 lg:px-24 ">
+      <div class="max-w-4xl mx-auto">
+
+        <h2 class=" text-3xl font-bold mb-6 text-center">
+          <span class="text-blue-500 dark:text-blue-400">S</span>
+          <span class="text-green-500 dark:text-green-400">k</span>
+          <span class="text-indigo-500 dark:text-indigo-400">i</span>
+          <span class="text-purple-500 dark:text-purple-400">l</span>
+          <span class="text-pink-500 dark:text-pink-400">l</span>
+          <span class="text-yellow-500 dark:text-yellow-400">s</span>
+        </h2>
+
+        <div class=" grid grid-cols-1 md:grid-cols-2 gap-6">
+
+          <div class="bg-gradient-to-b from-blue-600 to-blue-500 p-6 rounded-lg shadow-lg text-white">
+            <h3 class="text-xl font-bold mb-4">Frontend</h3>
+            <ul class="list-disc pl-6">
+              <li class="mb-2">React.js</li>
+              <li class="mb-2">Next.js</li>
+              <li class="mb-2">Tailwind CSS</li>
+              <li class="mb-2">HTML5</li>
+              <li class="mb-2">CSS3</li>
+              <li class="mb-2">JavaScript (ES6+)</li>
+            </ul>
+          </div>
+
+          <div class=" bg-gradient-to-b from-purple-600 to-purple-500 p-6 rounded-lg shadow-lg text-white">
+            <h3 class="text-xl font-bold mb-4">Backend</h3>
+            <ul class="list-disc pl-6">
+              <li class="mb-2">Django</li>
+              <li class="mb-2">Django Rest Framework</li>
+              <li class="mb-2">Express.js</li>
+              <li class="mb-2">Node.js</li>
+              <li class="mb-2">Python</li>
+              <li class="mb-2">SQL & NoSQL Databases</li>
+            </ul>
+          </div>
+
+          <div class="  bg-gradient-to-b from-indigo-600 to-indigo-500 p-6 rounded-lg shadow-lg text-white">
+            <h3 class="text-xl font-bold mb-4">Additional Skills</h3>
+            <ul class="list-disc pl-6">
+              <li class="mb-2">Responsive Web Design</li>
+              <li class="mb-2">Web Accessibility (WCAG)</li>
+              <li class="mb-2">Git & Version Control</li>
+              <li class="mb-2">Test-Driven Development (TDD)</li>
+              <li class="mb-2">RESTful APIs</li>
+              <li class="mb-2">UI/UX Design Principles</li>
+            </ul>
+          </div>
+
+          <div class=" bg-gradient-to-b from-pink-600 to-pink-500 p-6 rounded-lg shadow-lg text-white">
+            <h3 class="text-xl font-bold mb-4">Tools & Technologies</h3>
+            <ul class="list-outside pl-6">
+              <li class="mb-2">VS Code</li>
+              <li class="mb-2">Postman</li>
+              <li class="mb-2">Webpack</li>
+              <li class="mb-2">Command Line</li>
+              <li class="mb-2">Agile Methodologies</li>
+              <li class="mb-2">UI/UX Prototyping Tools</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="education" class="py-12 px-6 md:px-12 lg:px-24">
+      <div class="max-w-4xl mx-auto">
+        <h2 class="text-3xl font-bold mb-6 text-center">Education</h2>
+        <div class="mb-6">
+          <p class="text-lg">I studied computer science at the University of Computer Science, Mandalay from 2017 to
+            2020. Unfortunately,
+            due
+            to the instability of the political climate in Myanmar, I had to discontinue my studies.</p>
+        </div>
+        <div class="mb-6">
+          <p class="text-lg">Following this, I embarked on a journey of self-study in web development and programming
+            through various online platforms such as The Odin Project, Free Code Camp, and the Mozilla Developer
+            Network. I
+            also extensively utilized documentation from different languages and frameworks to enhance my skills.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="bg-white dark:bg-zinc-900 py-12 px-6 md:px-12 lg:px-24">
+      <div class="max-w-4xl mx-auto">
+        <h2 class="text-4xl font-bold text-center mb-8">My Projects</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+
+          <div class="transition-all transform  hover:scale-105 duration-300 flex flex-col">
+            <div class="bg-white dark:bg-zinc-800 shadow-lg rounded-lg overflow-hidden">
+              <img src="https://placehold.co/600x300" alt="Project 1" class="w-full h-48 object-cover object-center">
+              <div class="p-6">
+                <h3 class="text-xl font-semibold mb-2">Project Name 1</h3>
+                <p class="text-gray-600 dark:text-gray-400 mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing
+                  elit.
+                  Nulla dignissim justo ut magna pulvinar consectetur.</p>
+                <p class="text-sm font-medium">Languages/Frameworks:</p>
+                <p class="text-gray-600 dark:text-gray-400">HTML, CSS, JavaScript, React.js</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="transition-all transform  hover:scale-105 duration-300 flex flex-col">
+            <div class="bg-white dark:bg-zinc-800 shadow-lg rounded-lg overflow-hidden">
+              <img src="https://placehold.co/600x300" alt="Project 2" class="w-full h-48 object-cover object-center">
+              <div class="p-6">
+                <h3 class="text-xl font-semibold mb-2">Project Name 2</h3>
+                <p class="text-gray-600 dark:text-gray-400 mb-4">Sed blandit erat sed nisi vehicula, eu elementum magna
+                  varius. Nullam porttitor justo at ipsum tempus, nec luctus turpis commodo.</p>
+                <p class="text-sm font-medium">Languages/Frameworks:</p>
+                <p class="text-gray-600 dark:text-gray-400">Python, Django, HTML, CSS</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="transition-all transform  hover:scale-105 duration-300 flex flex-col">
+            <div class="bg-white dark:bg-zinc-800 shadow-lg rounded-lg overflow-hidden">
+              <img src="https://placehold.co/600x300" alt="Project 3" class="w-full h-48 object-cover object-center">
+              <div class="p-6">
+                <h3 class="text-xl font-semibold mb-2">Project Name 3</h3>
+                <p class="text-gray-600 dark:text-gray-400 mb-4">Vivamus in tortor sed quam volutpat efficitur.
+                  Curabitur
+                  ultricies arcu eget purus commodo, eget vulputate sem tincidunt.</p>
+                <p class="text-sm font-medium">Languages/Frameworks:</p>
+                <p class="text-gray-600 dark:text-gray-400">JavaScript, Node.js, Express.js, MongoDB</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="bg-white dark:bg-zinc-900 py-12 px-6 md:px-12 lg:px-24">
+      <div class="max-w-4xl mx-auto">
+        <h2 class="text-4xl font-bold text-center mb-8">Contact Me</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div class="bg-white dark:bg-zinc-800 shadow-lg rounded-lg p-6">
+            <h3 class="text-xl font-semibold mb-4">Ye Man Oo</h3>
+            <p class="text-lg text-gray-600 dark:text-gray-400 mb-2">Web Developer</p>
+            <p class="text-lg text-gray-600 dark:text-gray-400 mb-2">Email: axizeaus@gmail.com</p>
+            <p class="text-lg text-gray-600 dark:text-gray-400 mb-2">Phone: +959762996496</p>
+            <p class="text-lg text-gray-600 dark:text-gray-400 mb-2">Location: Lashio, Myanmar</p>
+            <a class="text-lg text-gray-700 dark:text-gray-300 mb-2" href="#">github</a>
+            <a class="text-lg text-gray-700 dark:text-gray-300 mb-2" href="#">linkedin</a>
+            <a class="text-lg text-gray-700 dark:text-gray-300 mb-2" href="#">whatsapp</a>
+            <a class="text-lg text-gray-700 dark:text-gray-300 mb-2" href="#">telegram</a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+  </main>
 </body>
 
 </html>

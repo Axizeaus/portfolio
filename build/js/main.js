@@ -13,3 +13,18 @@ const initApp = () => {
 };
 
 document.addEventListener("DOMContentLoaded", initApp);
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    console.log(entry);
+    if (entry.isIntersecting) {
+      entry.target.classList.remove("hide-magic");
+      entry.target.classList.add("show-magic");
+    } else {
+      entry.target.classList.remove("show-magic");
+    }
+  });
+});
+
+const magicElements = document.querySelectorAll(".hide-magic");
+magicElements.forEach((element) => observer.observe(element));
