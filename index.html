@@ -28,204 +28,201 @@
 </head>
 
 <body
-  class="antialiased min-h-screen bg-zinc-200 dark:bg-zinc-800 dark:text-white dark:text-opacity-80 place-content-center">
-  <header class="top-0 z-10 border-b-2">
+  class="antialiased min-h-screen bg-gradient-to-br dark:from-gray-900 dark:via-gray-800 dark:to-gray-900 place-content-center">
+  <header class="top-0 z-10 border-b-2 border-gray-200 dark:border-gray-700">
     <section class="mx-auto flex max-w-4xl items-center justify-between p-4">
-      <h1 class="text-3xl font-bold">Hello</h1>
+      <h1 class="text-3xl font-bold text-gray-900 dark:text-white"><a>
+          Portfolio
+        </a></h1>
       <button id="hamburger-button" class="relative h-8 w-8 cursor-pointer text-3xl md:hidden">
-
         <span
-          class="absolute top-4 right-4 -mt-0.5 h-1 w-8 rounded bg-black dark:bg-white transition-all duration-500 before:absolute before:h-1 before:w-8 before:-translate-x-4 before:-translate-y-3 before:rounded before:bg-black dark:before:bg-white before:transition-all before:duration-500 before:content-[''] after:absolute after:h-1 after:w-8 after:-translate-x-4 after:translate-y-3 after:rounded after:bg-black dark:after:bg-white after:transition-all after:duration-500 after:content-['']"></span>
-
-
+          class="absolute top-4 right-4 -mt-0.5 h-1 w-8 rounded bg-black dark:bg-white transition-all duration-500 before:absolute before:h-1 before:w-8 before:-translate-x-4 before:-translate-y-3 before:rounded before:bg-black dark:before:bg-white before:transition-all before:duration-500 after:absolute after:h-1 after:w-8 after:-translate-x-4 after:translate-y-3 after:rounded after:bg-black dark:after:bg-white after:transition-all after:duration-500"></span>
       </button>
       <nav class="hidden space-x-8 text-xl md:block" aria-label="main">
-        <a href="#about-me">About me</a>
-        <a href="#skills">Skills</a>
-        <a href="#education">Education</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact Me</a>
+        <a href="#about-me" class="text-gray-900 dark:text-gray-300 hover:text-blue-500 dark:hover:text-blue-400">About
+          me</a>
+        <a href="#skills"
+          class="text-gray-900 dark:text-gray-300 hover:text-blue-500 dark:hover:text-blue-400">Skills</a>
+        <a href="#education"
+          class="text-gray-900 dark:text-gray-300 hover:text-blue-500 dark:hover:text-blue-400">Education</a>
+        <a href="#projects"
+          class="text-gray-900 dark:text-gray-300 hover:text-blue-500 dark:hover:text-blue-400">Projects</a>
+        <a href="#contact" class="text-gray-900 dark:text-gray-300 hover:text-blue-500 dark:hover:text-blue-400">Contact
+          Me</a>
       </nav>
     </section>
     <section id="mobile-menu"
       class="top-68 justify-center absolute hidden w-full origin-top animate-open-menu flex-col bg-emerald-300 dark:bg-emerald-800 text-5xl">
-      <button class="text-8xl self-end px-6">
-        &times;
-      </button>
+      <button class="text-8xl self-end px-6 text-gray-900 dark:text-gray-300 hover:opacity-80">&times;</button>
       <nav class="flex min-h-screen flex-col items-center py-8" aria-label="mobile">
-        <a href="#about-me" class="w-full py-6 text-center hover:opacity-80 hover:border-solid">About me</a>
-        <a href="#skills" class="w-full py-6 text-center hover:opacity-80 hover:border-solid">Skills</a>
-        <a href="#education" class="w-full py-6 text-center hover:opacity-80 hover:border-solid">Education</a>
-        <a href="#projects" class="w-full py-6 text-center hover:opacity-80 hover:border-solid">Projects</a>
-        <a href="#contact" class="w-full py-6 text-center hover:opacity-80 hover:border-solid">Contact Me</a>
-
+        <a href="#about-me"
+          class="w-full py-6 text-center text-gray-900 dark:text-gray-300 hover:text-blue-500 dark:hover:text-blue-400">About
+          me</a>
+        <a href="#skills"
+          class="w-full py-6 text-center text-gray-900 dark:text-gray-300 hover:text-blue-500 dark:hover:text-blue-400">Skills</a>
+        <a href="#education"
+          class="w-full py-6 text-center text-gray-900 dark:text-gray-300 hover:text-blue-500 dark:hover:text-blue-400">Education</a>
+        <a href="#projects"
+          class="w-full py-6 text-center text-gray-900 dark:text-gray-300 hover:text-blue-500 dark:hover:text-blue-400">Projects</a>
+        <a href="#contact"
+          class="w-full py-6 text-center text-gray-900 dark:text-gray-300 hover:text-blue-500 dark:hover:text-blue-400">Contact
+          Me</a>
       </nav>
     </section>
   </header>
+
   <main class="mx-auto max-w-4xl container">
-    <section id="about-me" class=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2  py-12 px-6 md:px-12 lg:px-24">
-      <img src="https://placehold.co/500x500" alt="Ye Man Oo's photo" class="rounded-full shadow-2xl mx-auto md:mx-0">
-      <article class="flex flex-col justify-center p-8  text-black dark:text-white">
-        <h1 class="text-2xl font-bold mb-4 text-nowrap">
-          Hi there,
-          I'm Ye Man Oo!
-        </h1>
-        <p class="text-lg mb-4">I'm a passionate web developer with a flair for creating immersive digital experiences
-          that
-          leave a lasting impact.</p>
+    <section id="about-me" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 py-12 px-6 md:px-12 lg:px-24">
+      <img src="./src/images/portfolioImage.jpg" alt="Ye Man Oo's photo"
+        class="rounded-full shadow-2xl mx-auto md:mx-0">
+      <article class="flex flex-col justify-center p-8 text-gray-900 dark:text-gray-300">
+        <h1 class="text-2xl font-bold mb-4">Hi there, I'm Ye Man Oo!</h1>
+        <div id="dynamic-text" class="text-lg mb-4"></div>
       </article>
+
     </section>
 
-    <section id="skills" class=" py-12 px-6 md:px-12 lg:px-24 ">
+    <section id="skills" class="py-12 px-6 md:px-12 lg:px-24">
       <div class="max-w-4xl mx-auto">
+        <h2 class="text-3xl font-bold mb-12 text-center text-gray-900 dark:text-white">Skills</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div
+            class="p-6 rounded-lg bg-white/10 backdrop-blur-lg shadow-lg border border-white/20 transition-transform transform hover:scale-105">
+            <h3 class="text-xl font-bold mb-4 text-white">Programming Languages</h3>
+            <ul class="list-disc pl-6 text-gray-300">
+              <li class="mb-2">Python</li>
+              <li class="mb-2">JavaScript (ES6+)</li>
+              <li class="mb-2">TypeScript</li>
+            </ul>
+          </div>
 
-        <h2 class=" text-3xl font-bold mb-6 text-center">
-          Skills
-        </h2>
+          <div
+            class="p-6 rounded-lg bg-white/10 backdrop-blur-lg shadow-lg border border-white/20 transition-transform transform hover:scale-105">
+            <h3 class="text-xl font-bold mb-4 text-white">Databases</h3>
+            <ul class="list-disc pl-6 text-gray-300">
+              <li class="mb-2">PostgreSQL</li>
+              <li class="mb-2">MongoDB</li>
+              <li class="mb-2">SQLite</li>
+            </ul>
+          </div>
 
-        <div class=" grid grid-cols-1 md:grid-cols-2 gap-6">
-
-          <div class="bg-gradient-to-b from-blue-600 to-blue-500 p-6 rounded-lg shadow-lg text-white">
-            <h3 class="text-xl font-bold mb-4">Frontend</h3>
-            <ul class="list-disc pl-6">
+          <div
+            class="p-6 rounded-lg bg-white/10 backdrop-blur-lg shadow-lg border border-white/20 transition-transform transform hover:scale-105">
+            <h3 class="text-xl font-bold mb-4 text-white">Frameworks & Libraries</h3>
+            <ul class="list-disc pl-6 text-gray-300">
               <li class="mb-2">React.js</li>
               <li class="mb-2">Next.js</li>
-              <li class="mb-2">Tailwind CSS</li>
-              <li class="mb-2">HTML5</li>
-              <li class="mb-2">CSS3</li>
-              <li class="mb-2">JavaScript (ES6+)</li>
-            </ul>
-          </div>
-
-          <div class=" bg-gradient-to-b from-purple-600 to-purple-500 p-6 rounded-lg shadow-lg text-white">
-            <h3 class="text-xl font-bold mb-4">Backend</h3>
-            <ul class="list-disc pl-6">
-              <li class="mb-2">Django</li>
-              <li class="mb-2">Django Rest Framework</li>
               <li class="mb-2">Express.js</li>
-              <li class="mb-2">Node.js</li>
-              <li class="mb-2">Python</li>
-              <li class="mb-2">SQL & NoSQL Databases</li>
+              <li class="mb-2">Django</li>
+              <li class="mb-2">Django REST Framework</li>
+              <li class="mb-2">Tailwind CSS</li>
+              <li class="mb-2">Mongoose</li>
+              <li class="mb-2">Prisma</li>
             </ul>
           </div>
 
-          <div class="bg-gradient-to-b from-indigo-600 to-indigo-500 p-6 rounded-lg shadow-lg text-white">
-            <h3 class="text-xl font-bold mb-4">Additional Skills</h3>
-            <ul class="list-disc pl-6">
-              <li class="mb-2">Responsive Web Design</li>
-              <li class="mb-2">Web Accessibility (WCAG)</li>
-              <li class="mb-2">Git & Version Control</li>
-              <li class="mb-2">Test-Driven Development (TDD)</li>
-              <li class="mb-2">RESTful APIs</li>
-              <li class="mb-2">UI/UX Design Principles</li>
+          <div
+            class="p-6 rounded-lg bg-white/10 backdrop-blur-lg shadow-lg border border-white/20 transition-transform transform hover:scale-105">
+            <h3 class="text-xl font-bold mb-4 text-white">Tools & Technologies</h3>
+            <ul class="list-disc pl-6 text-gray-300">
+              <li class="mb-2">Git</li>
+              <li class="mb-2">GitHub</li>
+              <li class="mb-2">Docker</li>
+              <li class="mb-2">Jest</li>
+              <li class="mb-2">API Development</li>
+              <ul class="list-disc pl-6 text-gray-300">
+                <li class="mb-2">REST</li>
+                <li class="mb-2">GraphQL</li>
+              </ul>
             </ul>
           </div>
 
-          <div class=" bg-gradient-to-b from-pink-600 to-pink-500 p-6 rounded-lg shadow-lg text-white">
-            <h3 class="text-xl font-bold mb-4">Tools & Technologies</h3>
-            <ul class="list-outside pl-6">
-              <li class="mb-2">VS Code</li>
-              <li class="mb-2">Postman</li>
-              <li class="mb-2">Webpack</li>
-              <li class="mb-2">Command Line</li>
-              <li class="mb-2">Agile Methodologies</li>
-              <li class="mb-2">UI/UX Prototyping Tools</li>
-            </ul>
-          </div>
         </div>
       </div>
     </section>
 
     <section id="education" class="py-12 px-6 md:px-12 lg:px-24">
       <div class="max-w-4xl mx-auto">
-        <h2 class="text-3xl font-bold mb-6 text-center">Education</h2>
+        <h2 class="text-3xl font-bold mb-6 text-center text-gray-900 dark:text-white">Education</h2>
         <div class="mb-6">
-          <p class="text-lg">I studied computer science at the University of Computer Science, Mandalay from 2017 to
-            2020. Unfortunately,
-            due
-            to the instability of the political climate in Myanmar, I had to discontinue my studies.</p>
+          <p class="text-lg text-gray-900 dark:text-gray-300">I studied computer science at the University of Computer
+            Studies, Mandalay from 2017 to 2020. Unfortunately, due to the instability of the political climate in
+            Myanmar, I had to discontinue my studies.</p>
         </div>
         <div class="mb-6">
-          <p class="text-lg">Following this, I embarked on a journey of self-study in web development and programming
-            through various online platforms such as The Odin Project, Free Code Camp, and the Mozilla Developer
-            Network. I
-            also extensively utilized documentation from different languages and frameworks to enhance my skills.</p>
+          <p class="text-lg text-gray-900 dark:text-gray-300">Following this, I embarked on a journey of self-study in
+            web development and programming through various online platforms such as The Odin Project, Free Code Camp,
+            and the Mozilla Developer Network. I also extensively utilized documentation from different languages and
+            frameworks to enhance my skills.</p>
         </div>
       </div>
     </section>
 
     <section id="projects" class="bg-white dark:bg-zinc-900 py-12 px-6 md:px-12 lg:px-24">
       <div class="max-w-4xl mx-auto">
-        <h2 class="text-4xl font-bold text-center mb-8">My Projects</h2>
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <h2 class="text-4xl font-bold text-center mb-8 text-gray-900 dark:text-white">My Projects</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6">
+          <a href="https://github.com/Axizeaus/mood-tracker-next" target="_blank"
+            class="bg-emerald-300 dark:bg-emerald-800 p-6 rounded-lg shadow-lg transition-transform transform hover:scale-105">
+            <h3 class="text-2xl font-bold text-gray-900 dark:text-white mb-4">Mood Tracker</h3>
+            <p class="text-gray-900 dark:text-gray-300">A web app built using Next.js and Tailwind CSS to track and
+              analyze mood trends. It uses firebase as backend.</p>
+          </a>
 
+          <a href="https://github.com/Axizeaus/buy-sell-vehicles" target="_blank"
+            class="bg-emerald-300 dark:bg-emerald-800 p-6 rounded-lg shadow-lg transition-transform transform hover:scale-105">
+            <h3 class="text-2xl font-bold text-gray-900 dark:text-white mb-4">Buy and sell, vehicles</h3>
+            <p class="text-gray-900 dark:text-gray-300">A full-stack e-commerce application built using MongoDB,
+              Express.js,
+              React.js, and Node.js with comprehensive Jest tests for backend functionality.</p>
+          </a>
 
-          <div class="transition-all transform  hover:scale-105 duration-300 flex flex-col">
-            <div class="bg-white dark:bg-zinc-800 shadow-lg rounded-lg overflow-hidden">
-              <img src="https://placehold.co/600x300" alt="Project 1" class="w-full h-48 object-cover object-center">
-              <div class="p-6">
-                <h3 class="text-xl font-semibold mb-2">Project Name 1</h3>
-                <p class="text-gray-600 dark:text-gray-400 mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing
-                  elit.
-                  Nulla dignissim justo ut magna pulvinar consectetur.</p>
-                <p class="text-sm font-medium">Languages/Frameworks:</p>
-                <p class="text-gray-600 dark:text-gray-400">HTML, CSS, JavaScript, React.js</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="transition-all transform  hover:scale-105 duration-300 flex flex-col">
-            <div class="bg-white dark:bg-zinc-800 shadow-lg rounded-lg overflow-hidden">
-              <img src="https://placehold.co/600x300" alt="Project 2" class="w-full h-48 object-cover object-center">
-              <div class="p-6">
-                <h3 class="text-xl font-semibold mb-2">Project Name 2</h3>
-                <p class="text-gray-600 dark:text-gray-400 mb-4">Sed blandit erat sed nisi vehicula, eu elementum magna
-                  varius. Nullam porttitor justo at ipsum tempus, nec luctus turpis commodo.</p>
-                <p class="text-sm font-medium">Languages/Frameworks:</p>
-                <p class="text-gray-600 dark:text-gray-400">Python, Django, HTML, CSS</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="transition-all transform  hover:scale-105 duration-300 flex flex-col">
-            <div class="bg-white dark:bg-zinc-800 shadow-lg rounded-lg overflow-hidden">
-              <img src="https://placehold.co/600x300" alt="Project 3" class="w-full h-48 object-cover object-center">
-              <div class="p-6">
-                <h3 class="text-xl font-semibold mb-2">Project Name 3</h3>
-                <p class="text-gray-600 dark:text-gray-400 mb-4">Vivamus in tortor sed quam volutpat efficitur.
-                  Curabitur
-                  ultricies arcu eget purus commodo, eget vulputate sem tincidunt.</p>
-                <p class="text-sm font-medium">Languages/Frameworks:</p>
-                <p class="text-gray-600 dark:text-gray-400">JavaScript, Node.js, Express.js, MongoDB</p>
-              </div>
-            </div>
-          </div>
+          <!-- <div class="bg-emerald-300 dark:bg-emerald-800 p-6 rounded-lg shadow-lg">
+            <h3 class="text-2xl font-bold text-gray-900 dark:text-white mb-4">E-commerce Platform</h3>
+            <p class="text-gray-900 dark:text-gray-300">A scalable e-commerce platform built with Django and React,
+              integrating Stripe for payment processing and a PostgreSQL database for product and user management.</p>
+          </div> -->
 
         </div>
       </div>
     </section>
 
-    <section id="contact" class="bg-white dark:bg-zinc-900 py-12 px-6 md:px-12 lg-px-24 ">
-      <div class="max-w-4xl mx-auto">
-        <h2 class="text-4xl font-bold text-center mb-8">Contact Me</h2>
-        <div class="grid grid-cols-1 gap-6">
-          <div class="bg-white dark:bg-zinc-800 shadow-lg rounded-lg p-6">
-            <h3 class="text-xl font-semibold mb-4">Ye Man Oo</h3>
-            <p class="text-lg text-gray-700 dark:text-gray-400 mb-2">Web Developer</p>
-            <p class="text-lg text-gray-700 dark:text-gray-400 mb-2">Email: axizeaus@gmail.com</p>
-            <p class="text-lg text-gray-700 dark:text-gray-400 mb-2">Phone: +959762996496</p>
-            <p class="text-lg text-gray-700 dark:text-gray-400 mb-2">Location: Lashio, Myanmar</p>
-            <a class="text-lg text-gray-700 dark:text-gray-400 mb-2" href="#">github</a>
-            <a class="text-lg text-gray-700 dark:text-gray-400 mb-2" href="#">linkedin</a>
-            <a class="text-lg text-gray-700 dark:text-gray-400 mb-2" href="#">whatsapp</a>
-            <a class="text-lg text-gray-700 dark:text-gray-400 mb-2" href="#">telegram</a>
-          </div>
-        </div>
+    <section id="contact" class="py-12 px-6 md:px-12 lg:px-24">
+      <div class="max-w-4xl mx-auto text-center">
+        <h2 class="text-3xl font-bold mb-6 text-gray-900 dark:text-white">Contact Me</h2>
+        <p class="text-lg text-gray-900 dark:text-gray-300">Feel free to reach out to me via email at <a
+            href="mailto:axizeaus@gmail.com" class="text-blue-500 hover:underline"
+            target="_blank">axizeaus@gmail.com</a> or connect
+          with
+          me on
+          <a href="https://www.linkedin.com/in/yemanoo/" class=" text-blue-500 hover:underline "
+            target="_blank">LinkedIn</a>
+          or <a href="https://github.com/Axizeaus" class=" text-blue-500 hover:underline " target="_blank">github</a>.
+        </p>
       </div>
     </section>
-
 
   </main>
+  <script>
+    const textArray = [
+      "I", "am", "a", "web", "developer", "focused", "on", "building", "effective", "digital", "solutions.",
+      "I", "love", "learning", "new", "technologies", "and", "tackling", "programming", "challenges."
+    ];
+
+    const dynamicTextElement = document.getElementById("dynamic-text");
+    let index = 0;
+
+    function displayNextWord() {
+      if (index < textArray.length) {
+        dynamicTextElement.innerHTML += (index === 0 ? "" : " ") + textArray[index];
+        index++;
+        setTimeout(displayNextWord, 200);
+      }
+    }
+
+    displayNextWord();
+  </script>
 </body>
+
 
 </html>
