@@ -4,9 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ye Man Oo's portfolio</title>
-  <!-- <link rel="stylesheet" href="./css/style.css"> -->
-  <!-- <script src="./js/main.js" defer></script> -->
+  <title>Ye Man Oo's Portfolio</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     const initApp = () => {
@@ -40,7 +38,9 @@
       </button>
       <nav class="hidden space-x-8 text-xl md:block" aria-label="main">
         <a href="#about-me" class="text-gray-900 dark:text-gray-300 hover:text-blue-500 dark:hover:text-blue-400">About
-          me</a>
+          Me</a>
+        <a href="#experience"
+          class="text-gray-900 dark:text-gray-300 hover:text-blue-500 dark:hover:text-blue-400">Experience</a>
         <a href="#skills"
           class="text-gray-900 dark:text-gray-300 hover:text-blue-500 dark:hover:text-blue-400">Skills</a>
         <a href="#education"
@@ -57,7 +57,9 @@
       <nav class="flex min-h-screen flex-col items-center py-8" aria-label="mobile">
         <a href="#about-me"
           class="w-full py-6 text-center text-gray-900 dark:text-gray-300 hover:text-blue-500 dark:hover:text-blue-400">About
-          me</a>
+          Me</a>
+        <a href="#experience"
+          class="w-full py-6 text-center text-gray-900 dark:text-gray-300 hover:text-blue-500 dark:hover:text-blue-400">Experience</a>
         <a href="#skills"
           class="w-full py-6 text-center text-gray-900 dark:text-gray-300 hover:text-blue-500 dark:hover:text-blue-400">Skills</a>
         <a href="#education"
@@ -73,13 +75,39 @@
 
   <main class="mx-auto max-w-4xl container">
     <section id="about-me" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 py-12 px-6 md:px-12 lg:px-24">
-      <img src="./src/images/portfolioImage.jpg" alt="Ye Man Oo's photo"
-        class="rounded-full shadow-2xl mx-auto md:mx-0">
+      <img src="https://axizeaus.github.io/portfolio/src/images/portfolioImage.jpg" alt="Ye Man Oo's photo"
+        class="rounded-full shadow-2xl mx-auto md:mx-0 p-10">
       <article class="flex flex-col justify-center p-8 text-gray-900 dark:text-gray-300">
         <h1 class="text-2xl font-bold mb-4">Hi there, I'm Ye Man Oo!</h1>
-        <div id="dynamic-text" class="text-lg mb-4"></div>
+        <p class="text-lg mb-4">
+          I'm a full-stack developer who loves taking on challenges by breaking them down into smaller pieces. I'm all
+          about
+          creating solid, secure, and user-friendly web applications.
+        </p>
       </article>
+    </section>
 
+    <section id="experience" class="py-12 px-6 md:px-12 lg:px-24">
+      <div class="max-w-4xl mx-auto">
+        <h2 class="text-3xl font-bold mb-6 text-center text-gray-900 dark:text-white">Professional Experience</h2>
+        <div
+          class="p-6 rounded-lg bg-white/10 backdrop-blur-lg shadow-lg border border-white/20 transition-transform transform hover:scale-105">
+          <h3 class="text-xl font-bold mb-2 text-white">Full-stack Web Developer Intern <span
+              class="text-base font-normal float-right">2024 – 2025</span></h3>
+          <p class="text-lg mb-2 text-gray-300">Emplity (formerly GenVoice) | Remote</p>
+          <ul class="list-disc pl-6 text-gray-300">
+            <li class="mb-2">Transitioned the frontend from Next.js Page Router to App Router, improving routing
+              efficiency and performance.</li>
+            <li class="mb-2">Upgraded and migrated backend database models to enhance data efficiency and scalability.
+            </li>
+            <li class="mb-2">Developed an in-memory caching system to significantly improve frontend performance.</li>
+            <li class="mb-2">Contributed to creating a secure authentication system between the Django backend and
+              Next.js frontend using JWT and session cookies.</li>
+            <li class="mb-2">Implemented an audio data pipeline to seamlessly connect the frontend, backend, and an AI
+              server, enabling real-time audio processing.</li>
+          </ul>
+        </div>
+      </div>
     </section>
 
     <section id="skills" class="py-12 px-6 md:px-12 lg:px-24">
@@ -103,6 +131,7 @@
               <li class="mb-2">PostgreSQL</li>
               <li class="mb-2">MongoDB</li>
               <li class="mb-2">SQLite</li>
+              <li class="mb-2">Supabase</li>
             </ul>
           </div>
 
@@ -118,6 +147,7 @@
               <li class="mb-2">Tailwind CSS</li>
               <li class="mb-2">Mongoose</li>
               <li class="mb-2">Prisma</li>
+              <li class="mb-2">Jest</li>
             </ul>
           </div>
 
@@ -128,7 +158,6 @@
               <li class="mb-2">Git</li>
               <li class="mb-2">GitHub</li>
               <li class="mb-2">Docker</li>
-              <li class="mb-2">Jest</li>
               <li class="mb-2">API Development</li>
               <ul class="list-disc pl-6 text-gray-300">
                 <li class="mb-2">REST</li>
@@ -136,7 +165,6 @@
               </ul>
             </ul>
           </div>
-
         </div>
       </div>
     </section>
@@ -144,45 +172,60 @@
     <section id="education" class="py-12 px-6 md:px-12 lg:px-24">
       <div class="max-w-4xl mx-auto">
         <h2 class="text-3xl font-bold mb-6 text-center text-gray-900 dark:text-white">Education</h2>
-        <div class="mb-6">
-          <p class="text-lg text-gray-900 dark:text-gray-300">I studied computer science at the University of Computer
-            Studies, Mandalay from 2017 to 2020. Unfortunately, due to the instability of the political climate in
-            Myanmar, I had to discontinue my studies.</p>
-        </div>
-        <div class="mb-6">
-          <p class="text-lg text-gray-900 dark:text-gray-300">Following this, I embarked on a journey of self-study in
-            web development and programming through various online platforms such as The Odin Project, Free Code Camp,
-            and the Mozilla Developer Network. I also extensively utilized documentation from different languages and
-            frameworks to enhance my skills.</p>
+        <div
+          class="p-6 rounded-lg bg-white/10 backdrop-blur-lg shadow-lg border border-white/20 transition-transform transform hover:scale-105">
+          <h3 class="text-xl font-bold mb-2 text-white">University of Computer Studies, Mandalay <span
+              class="text-base font-normal float-right">12/2017 – 03/2020</span></h3>
+          <p class="text-lg mb-2 text-gray-300">Computer Science | Mandalay, Myanmar</p>
+          <p class="text-gray-300">
+            Studied computer science before discontinuing due to political instability. I then embarked on a journey of
+            self-study in web development through platforms like The Odin Project, Free Code Camp, and official
+            documentation.
+          </p>
         </div>
       </div>
     </section>
 
-    <section id="projects" class="bg-white dark:bg-zinc-900 py-12 px-6 md:px-12 lg:px-24">
-      <div class="max-w-4xl mx-auto">
+    <section id="projects" class="py-12 px-6 md:px-12 lg:px-24">
+      <div class="max-w-6xl mx-auto">
         <h2 class="text-4xl font-bold text-center mb-8 text-gray-900 dark:text-white">My Projects</h2>
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6">
-          <a href="https://github.com/Axizeaus/mood-tracker-next" target="_blank"
+        <div class="grid grid-cols-1  gap-5">
+
+          <a href="https://projectnemesismm.vercel.app/" target="_blank"
+            class="bg-emerald-300 dark:bg-emerald-800 p-6 rounded-lg shadow-lg transition-transform transform hover:scale-105">
+            <h3 class="text-2xl font-bold text-gray-900 dark:text-white mb-4">Project Nemesis Myanmar</h3>
+            <p class="text-gray-900 dark:text-gray-300 mb-4">
+              A platform designed to protect people in Myanmar from online predators by allowing them to report scams
+              and sexual harassment.
+            </p>
+            <p class="text-gray-900 dark:text-gray-300">
+              <strong class="text-white">Technologies:</strong> Next.js v15, Tailwind CSS, Supabase
+            </p>
+          </a>
+
+          <a href="https://mood-tracker-axizeaus.netlify.app/" target="_blank"
             class="bg-emerald-300 dark:bg-emerald-800 p-6 rounded-lg shadow-lg transition-transform transform hover:scale-105">
             <h3 class="text-2xl font-bold text-gray-900 dark:text-white mb-4">Mood Tracker</h3>
-            <p class="text-gray-900 dark:text-gray-300">A web app built using Next.js and Tailwind CSS to track and
-              analyze mood trends. It uses firebase as backend.</p>
+            <p class="text-gray-900 dark:text-gray-300 mb-4">
+              A web application for monitoring and analyzing moods over time to provide insights into emotional
+              well-being.
+            </p>
+            <p class="text-gray-900 dark:text-gray-300">
+              <strong class="text-white">Technologies:</strong> Next.js v14, Tailwind CSS, Firebase
+            </p>
           </a>
 
           <a href="https://github.com/Axizeaus/buy-sell-vehicles" target="_blank"
             class="bg-emerald-300 dark:bg-emerald-800 p-6 rounded-lg shadow-lg transition-transform transform hover:scale-105">
-            <h3 class="text-2xl font-bold text-gray-900 dark:text-white mb-4">Buy and sell, vehicles</h3>
-            <p class="text-gray-900 dark:text-gray-300">A full-stack e-commerce application built using MongoDB,
-              Express.js,
-              React.js, and Node.js with comprehensive Jest tests for backend functionality.</p>
+            <h3 class="text-2xl font-bold text-gray-900 dark:text-white mb-4">Buy and Sell, Vehicles</h3>
+            <p class="text-gray-900 dark:text-gray-300 mb-4">
+              A full-stack web application for buying and selling vehicles, featuring user-friendly listing and search
+              functionalities.
+            </p>
+            <p class="text-gray-900 dark:text-gray-300">
+              <strong class="text-white">Technologies:</strong> React, TypeScript, Express.js, MongoDB
+            </p>
           </a>
-
-          <!-- <div class="bg-emerald-300 dark:bg-emerald-800 p-6 rounded-lg shadow-lg">
-            <h3 class="text-2xl font-bold text-gray-900 dark:text-white mb-4">E-commerce Platform</h3>
-            <p class="text-gray-900 dark:text-gray-300">A scalable e-commerce platform built with Django and React,
-              integrating Stripe for payment processing and a PostgreSQL database for product and user management.</p>
-          </div> -->
-
         </div>
       </div>
     </section>
@@ -190,39 +233,18 @@
     <section id="contact" class="py-12 px-6 md:px-12 lg:px-24">
       <div class="max-w-4xl mx-auto text-center">
         <h2 class="text-3xl font-bold mb-6 text-gray-900 dark:text-white">Contact Me</h2>
-        <p class="text-lg text-gray-900 dark:text-gray-300">Feel free to reach out to me via email at <a
-            href="mailto:axizeaus@gmail.com" class="text-blue-500 hover:underline"
-            target="_blank">axizeaus@gmail.com</a> or connect
-          with
-          me on
+        <p class="text-lg text-gray-900 dark:text-gray-300">
+          Feel free to reach out to me via email at <a href="mailto:axizeaus@gmail.com"
+            class="text-blue-500 hover:underline" target="_blank">axizeaus@gmail.com</a>, by phone at +959762996496, or
+          connect with me on
           <a href="https://www.linkedin.com/in/yemanoo/" class=" text-blue-500 hover:underline "
-            target="_blank">LinkedIn</a>
-          or <a href="https://github.com/Axizeaus" class=" text-blue-500 hover:underline " target="_blank">github</a>.
+            target="_blank">LinkedIn</a> or <a href="https://github.com/Axizeaus"
+            class=" text-blue-500 hover:underline " target="_blank">GitHub</a>.
         </p>
       </div>
     </section>
 
   </main>
-  <script>
-    const textArray = [
-      "I", "am", "a", "web", "developer", "focused", "on", "building", "effective", "digital", "solutions.",
-      "I", "love", "learning", "new", "technologies", "and", "tackling", "programming", "challenges."
-    ];
-
-    const dynamicTextElement = document.getElementById("dynamic-text");
-    let index = 0;
-
-    function displayNextWord() {
-      if (index < textArray.length) {
-        dynamicTextElement.innerHTML += (index === 0 ? "" : " ") + textArray[index];
-        index++;
-        setTimeout(displayNextWord, 200);
-      }
-    }
-
-    displayNextWord();
-  </script>
 </body>
-
 
 </html>
